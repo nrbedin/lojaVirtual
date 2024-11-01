@@ -6,15 +6,15 @@ A "Loja Virtual" é uma plataforma de comércio eletrônico desenvolvida para fa
 Flutter version: 3.22.1
 
 ## :sparkles: Funcionalidades
-- :heavy_check_mark: Cadastro e Login de Usuários: Permite que os usuários se registrem e façam login para acessar a loja.
+# :heavy_check_mark: Cadastro e Login de Usuários: Permite que os usuários se registrem e façam login para acessar a loja.
 
-- :heavy_check_mark: Navegação de Produtos: Exibe uma lista de produtos disponíveis, permitindo aos usuários adicionar itens ao carrinho.
+# :heavy_check_mark: Navegação de Produtos: Exibe uma lista de produtos disponíveis, permitindo aos usuários adicionar itens ao carrinho.
 
-- :heavy_check_mark: Carrinho de Compras: Os usuários podem adicionar, remover e ajustar a quantidade de produtos no carrinho.
+# :heavy_check_mark: Carrinho de Compras: Os usuários podem adicionar, remover e ajustar a quantidade de produtos no carrinho.
 
-- :heavy_check_mark: Finalização do Pedido: Facilita o processo de conclusão do pedido.
+# :heavy_check_mark: Finalização do Pedido: Facilita o processo de conclusão do pedido.
 
-- :heavy_check_mark: Consulta de Pedidos: Os usuários podem consultar o status de entrega dos pedidos realizados.
+# :heavy_check_mark: Consulta de Pedidos: Os usuários podem consultar o status de entrega dos pedidos realizados.
 
 ## :rocket: Tecnologias
 As seguintes ferramentas foram usadas na construção deste projeto:
