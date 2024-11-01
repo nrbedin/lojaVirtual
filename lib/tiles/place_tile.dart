@@ -1,5 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -17,9 +18,9 @@ class PlaceTile extends StatelessWidget {
         children: [
           SizedBox(
             height: 270.0,
-            child: Image.network(
-              snapshot["image"],
-              fit: BoxFit.cover,
+            child: Image.asset(
+              'assets/icons/fundo.png',
+              fit: BoxFit.contain,
             ),
           ),
           Container(
@@ -28,7 +29,7 @@ class PlaceTile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  snapshot["title"],
+                  'Empresa NR',
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -36,7 +37,7 @@ class PlaceTile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  snapshot["address"],
+                  'Rua André Felipe, 50',
                   textAlign: TextAlign.start,
                 )
               ],
@@ -47,32 +48,32 @@ class PlaceTile extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  launchUrlString(
-                      "https://www.google.com/maps/search/?api=1&query=${snapshot["lat"]},"
-                      "${snapshot["long"]}");
+                  //launchUrlString(
+                  //    "https://www.google.com/maps/search/?api=1&query=${snapshot["lat"]},"
+                  //    "${snapshot["long"]}");
                 },
                 child: Text(
                   "Ver no Mapa",
                   // style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).primaryColor,
-                  onPrimary: Colors.white,
+                  backgroundColor: Theme.of(context).primaryColor,
+                  foregroundColor: Colors.white,
                 ),
               ),
               SizedBox(width: 18.0),
               Padding(padding: EdgeInsets.zero),
               ElevatedButton(
                 onPressed: () {
-                  launchUrlString("tel: ${snapshot["phone"]}");
+                  // launchUrlString("tel: ${snapshot["phone"]}");
                 },
                 child: Text(
                   "Ligar",
                   //style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).primaryColor,
-                  onPrimary: Colors.white,
+                  backgroundColor: Theme.of(context).primaryColor,
+                  foregroundColor: Colors.white,
                 ),
               ),
               Padding(padding: EdgeInsets.all(8.0)),

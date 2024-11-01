@@ -1,5 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../models/user_model.dart';
 import '../screens/login_screen.dart';
@@ -60,8 +61,8 @@ class OrdersTab extends StatelessWidget {
                 //style: TextStyle(fontSize: 18.0, color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
-                primary: Theme.of(context).primaryColor,
-                onPrimary: Colors.white,
+                backgroundColor: Theme.of(context).primaryColor,
+                foregroundColor: Colors.white,
               ),
               onPressed: () {
                 Navigator.of(context).push(

@@ -1,16 +1,35 @@
-# lojavirtual
+# Loja Virtual
 
-A new Flutter project.
+## :dart: Sobre
+A "Loja Virtual" é uma plataforma de comércio eletrônico desenvolvida para facilitar pedidos de comida, incluindo pizzas, doces e lanches. Através de um sistema de login, os usuários podem acessar uma lista de produtos, adicionar itens ao carrinho de compras, e finalizar pedidos de forma prática e rápida.
 
-## Getting Started
+Flutter version: 3.22.1
 
-This project is a starting point for a Flutter application.
+## :sparkles: Funcionalidades
+- :heavy_check_mark: Cadastro e Login de Usuários: Permite que os usuários se registrem e façam login para acessar a loja.
 
-A few resources to get you started if this is your first Flutter project:
+- :heavy_check_mark: Navegação de Produtos: Exibe uma lista de produtos disponíveis, permitindo aos usuários adicionar itens ao carrinho.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- :heavy_check_mark: Carrinho de Compras: Os usuários podem adicionar, remover e ajustar a quantidade de produtos no carrinho.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- :heavy_check_mark: Finalização do Pedido: Facilita o processo de conclusão do pedido.
+
+- :heavy_check_mark: Consulta de Pedidos: Os usuários podem consultar o status de entrega dos pedidos realizados.
+
+## :rocket: Tecnologias
+As seguintes ferramentas foram usadas na construção deste projeto:
+
+- Flutter 3.22.1
+
+- Dart
+
+- Firebase
+
+## :mailbox_with_mail: Contato
+Desenvolvido por Naiara Rafaela Bedin. Para saber mais sobre mim ou sobre meus projetos, entre em contato através dos links abaixo:
+
+GitHub: https://github.com/nrbedin
+
+LinkedIn: https://www.linkedin.com/in/naiara-bedin/
+
+Email: nrbedin@gmail.com

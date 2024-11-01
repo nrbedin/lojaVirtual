@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:scoped_model/scoped_model.dart';
+
 import 'package:lojavirtual/models/user_model.dart';
 import 'package:lojavirtual/screens/signup_screen.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 import '../helpers/snack_helper.dart';
 
@@ -32,8 +34,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 "CRIAR CONTA",
               ),
               style: ElevatedButton.styleFrom(
-                primary: (Theme.of(context).primaryColor),
-                onPrimary: Colors.white,
+                backgroundColor: (Theme.of(context).primaryColor),
+                foregroundColor: Colors.white,
               ),
             ),
           ],
@@ -103,8 +105,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     ElevatedButton(
                       child: Text("Entrar"),
                       style: ElevatedButton.styleFrom(
-                        primary: (Theme.of(context).primaryColor),
-                        onPrimary: Colors.white,
+                        backgroundColor: (Theme.of(context).primaryColor),
+                        foregroundColor: Colors.white,
                       ),
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {}

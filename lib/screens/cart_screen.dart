@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+
+import 'package:scoped_model/scoped_model.dart';
+
 import 'package:lojavirtual/models/user_model.dart';
 import 'package:lojavirtual/screens/login_screen.dart';
 import 'package:lojavirtual/screens/order_screen.dart';
 import 'package:lojavirtual/widgets/cart_price.dart';
 import 'package:lojavirtual/widgets/discount_cart.dart';
 import 'package:lojavirtual/widgets/ship_card.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 import '../models/cart_model.dart';
 import '../tiles/cart_tile.dart';
@@ -70,8 +72,8 @@ class CartScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 18.0, color: Colors.white),
                   ),
                   style: ElevatedButton.styleFrom(
-                    primary: Theme.of(context).primaryColor,
-                    onPrimary: Colors.white,
+                    backgroundColor: Theme.of(context).primaryColor,
+                    foregroundColor: Colors.white,
                   ),
                   onPressed: () {
                     Navigator.of(context).push(

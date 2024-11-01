@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lojavirtual/models/cart_model.dart';
+
 import 'package:scoped_model/scoped_model.dart';
+
+import 'package:lojavirtual/models/cart_model.dart';
 
 class CartPrice extends StatelessWidget {
   final VoidCallback buy;
@@ -86,8 +88,8 @@ class CartPrice extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: Theme.of(context).primaryColor,
-                      onPrimary: Colors.white,
+                      backgroundColor: Theme.of(context).primaryColor,
+                      foregroundColor: Colors.white,
                     ),
                   )
                 ],

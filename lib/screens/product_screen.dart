@@ -1,7 +1,9 @@
 //import 'dart:io';
 
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+
+import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:lojavirtual/datas/cart_product.dart';
 import 'package:lojavirtual/datas/product_data.dart';
 import 'package:lojavirtual/models/cart_model.dart';
@@ -153,8 +155,8 @@ class _ProductScreenState extends State<ProductScreen> {
                           : "Entre para comprar",
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: primaryColor,
-                      onPrimary: Colors.white,
+                      backgroundColor: primaryColor,
+                      foregroundColor: Colors.white,
                     ),
                   ),
                 ),

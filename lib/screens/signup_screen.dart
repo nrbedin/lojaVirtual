@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:scoped_model/scoped_model.dart';
+
 import 'package:lojavirtual/helpers/snack_helper.dart';
 import 'package:lojavirtual/models/user_model.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -92,8 +94,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ElevatedButton(
                       child: Text("Criar conta"),
                       style: ElevatedButton.styleFrom(
-                        primary: (Theme.of(context).primaryColor),
-                        onPrimary: Colors.white,
+                        backgroundColor: (Theme.of(context).primaryColor),
+                        foregroundColor: Colors.white,
                       ),
                       onPressed: () async {
                         if (_formKey.currentState!.validate()) {
